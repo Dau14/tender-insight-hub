@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+psycopg2-binary
+pymongo
+pyjwt
+pypdf2
+transformers
+torch
+scikit-learn
+requests
+python-dotenv
