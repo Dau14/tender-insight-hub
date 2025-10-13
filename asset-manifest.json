@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tender-insight-hub/static/css/main.6d0b8f97.css",
+    "main.js": "/tender-insight-hub/static/js/main.1b4741fc.js",
+    "index.html": "/tender-insight-hub/index.html",
+    "main.6d0b8f97.css.map": "/tender-insight-hub/static/css/main.6d0b8f97.css.map",
+    "main.1b4741fc.js.map": "/tender-insight-hub/static/js/main.1b4741fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d0b8f97.css",
+    "static/js/main.1b4741fc.js"
+  ]
+}
