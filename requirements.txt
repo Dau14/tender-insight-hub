@@ -11,3 +11,9 @@ torch
 scikit-learn
 requests
 python-dotenv
+fastapi
+uvicorn
+python-dotenv
+pymongo
+psycopg2-binary
+python-multipart
