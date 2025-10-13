@@ -1,0 +1,26 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Lint
+      run: flake8 .  # Install flake8
+    - name: Test
+      run: pytest  # Add tests in tests/
+    - name: Deploy
+      if: github.ref == 'refs/heads/main'
+      run: echo "Deploy to production"  # Replace with real deploy (e.g., Heroku)

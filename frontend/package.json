@@ -3,12 +3,40 @@
   "version": "1.0.0",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "^5.0.1",
     "axios": "^1.7.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^0.0.0"
+    "@svgr/webpack": "^8.1.0",
+    "resolve-url-loader": "^5.0.0",
+    "webpack-dev-server": "^5.0.4",
+    "chart.js": "^4.4.4",
+    "react-chartjs-2": "^5.2.0",
+    "react-wordcloud": "^1.2.7",
+    "tailwindcss": "^3.4.13",
+    "postcss": "^8.4.47",
+    "autoprefixer": "^10.4.20"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://Dau14.github.io/tender-insight-hub",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
