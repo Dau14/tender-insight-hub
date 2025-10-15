@@ -3,25 +3,26 @@
   "version": "1.0.0",
   "scripts": {
     "start": "react-scripts start",
+  "build": "react-scripts build && postcss src/index.css -o src/output.css",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2",
-    "react-scripts": "^5.0.1",
-    "axios": "^1.7.7",
     "@svgr/webpack": "^8.1.0",
-    "resolve-url-loader": "^5.0.0",
-    "webpack-dev-server": "^5.0.4",
-    "chart.js": "^4.4.4",
-    "react-chartjs-2": "^5.2.0",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.7.7",
+    "chart.js": "^4.5.1",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "react-scripts": "^5.0.1",
     "react-wordcloud": "^1.2.7",
-    "tailwindcss": "^3.4.13",
-    "postcss": "^8.4.47",
-    "autoprefixer": "^10.4.20"
+    "resolve-url-loader": "^5.0.0",
+    "tailwindcss": "^3.4.18",
+    "webpack-dev-server": "^5.0.4"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"

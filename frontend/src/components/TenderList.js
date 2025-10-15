@@ -6,7 +6,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://your-app.onrender.com';
 
 function TenderList() {
   const [tenders, setTenders] = useState([]);
